@@ -1,0 +1,49 @@
+selenium 及selenium standalone server下载地址
+Selenium Server 已经包含了 Java 版 Selenium 包的所有模块，
+Selenium 会更加方便，所以，推荐使用 Selenium Server。
+http://selenium-release.storage.googleapis.com/index.html?path=3.9/
+
+centos使用putty传文件
+win传给centos：
+cmd命令行：将selenium-server-standalone-3.9.0.jar传到centos下的/usr 目录下
+pscp C:\Users\SuHui\Desktop\selenium-server-standalone-3.9.0.jar root@39.105.71.130:/usr
+
+39.105.71.130
+
+
+tomcat
+目录:  /mysoft/apache-tomcat-7.0.92
+启动tomcat并查看启动日志：./start.sh;tail -f catalina.out
+
+
+
+maven打包
+mvn clean package
+但编译测试用例类生成相应的class文件至target/test-classes下 
+clean package -DskipTests
+不执行测试用例，也不编译测试用例类。
+-Dmaven.test.skip=true，
+
+
+ ps -ef|grep tomcat
+ netstat -anp|grep
+
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64 
+export JRE_HOME=${JAVA_HOME}/jre
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
+export PATH=${JAVA_HOME}/bin:$PATH
+source /etc/profile
+
+
+systemctl status mysqld
+systemctl start mysqld
+
+systemctl start jenkins.service       启动jenkins 
+  
+systemctl enable jenkins.service   设置jenkins开机启动 
+  
+systemctl stop jenkins.service       关闭jenkins 
+  
+systemctl status jenkins.service    查看jenkins的状态
+
+
