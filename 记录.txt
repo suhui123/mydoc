@@ -43,6 +43,13 @@ systemctl start jenkins.service       启动jenkins
 systemctl enable jenkins.service   设置jenkins开机启动 
   
 systemctl stop jenkins.service       关闭jenkins 
+
+git
+git add .
+git commit -m"注释"
+git push
+
+
   
 systemctl status jenkins.service    查看jenkins的状态
 
